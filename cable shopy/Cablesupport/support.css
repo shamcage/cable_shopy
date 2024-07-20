@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+nav a:hover {
+  color: #23527c;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.faq-container {
+  padding: 20px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion-content {
+  padding: 0 18px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.accordion-content p {
+  margin: 0;
+}
+
+.accordion:after {
+  content: "\002B";
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.accordion.active {
+  background-color: #aaa;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form label {
+  margin-bottom: 10px;
+}
+
+#contact-form input, #contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+#search-input {
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #ccc;
+}
+
+#search-results {
+  padding: 20px;
+}
+
+.feedback-rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.feedback-rating label {
+  margin-right: 10px;
+}
+
+.feedback-comment {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  color: #666;
+}
+
+/* Animations */
+
+.accordion-content {
+  max-height: 0;
+  transition: max-height 0.4s;
+}
+
+.accordion.active .accordion-content {
+  max-height: 100px;
+  transition: max-height 0.4s;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.4s;
+}
+
+#contact-form button[type="submit"] {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #23527c;
+  transition: background-color 0.4s;
+}

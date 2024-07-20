@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support</title>
+  <link rel="stylesheet" href="support.css">
+</head>
+<body>
+  <header>
+    <h1>Customer Support</h1>
+    <nav>
+      <ul>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <button class="accordion">Question 1</button>
+        <div class="accordion-content">
+          <p>Answer 1</p>
+        </div>
+        <button class="accordion">Question 2</button>
+        <div class="accordion-content">
+          <p>Answer 2</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section id="search">
+      <h2>Search for Solutions</h2>
+      <input type="text" id="search-input" placeholder="Search">
+      <div id="search-results"></div>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>24 hours online</p>
+    </section>
+
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <form id="feedback-form">
+        <label for="rating">Rating:</label>
+        <select id="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <label for="comment">Comment:</label>
+        <textarea id="comment"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Customer Support</p>
+  </footer>
+
+  <script src="support.js"></script>
+</body>
+</html>
